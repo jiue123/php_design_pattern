@@ -33,8 +33,8 @@ yum update -y
 
 yum install -y php70w php70w-opcache php70w-mysql.x86_64 php70w-mbstring.x86_64 php70w-xml.x86_64 php70w-pdo.x86_64 mariadb-server
 
-systemctl enable mariadb
-systemctl start mariadb
+systemctl enable mariadb.service
+systemctl start mariadb.service
 
 echo 'cd /vagrant' >> /home/vagrant/.bashrc
 echo '/usr/sbin/setenforce 0' >> /home/vagrant/.bashrc
